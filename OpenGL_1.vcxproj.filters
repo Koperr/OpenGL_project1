@@ -73,5 +73,8 @@
     <Image Include="res\textures\capybara1.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="res\textures\jareczek.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

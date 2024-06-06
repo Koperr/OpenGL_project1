@@ -13,6 +13,7 @@
 #include "VertexArray.h"
 #include "VertexBufferLayout.h"
 #include "Shader.h"
+#include "Texture.h"
 
 void RGB(float& r, float& g, float& b, float& iR, float& iG, float& iB)
 {
@@ -66,10 +67,10 @@ int main(void)
     std::cout << glGetString(GL_VERSION) << std::endl;
 
     float positions[] = {
-        -0.5f, -0.5f, // 0
-         0.5f, -0.5f, // 1
-         0.5f,  0.5f, // 2
-        -0.5f,  0.5f  // 3
+        -0.5f, -0.5f, 0.0f, 0.0f,// 0
+         0.5f, -0.5f, 1.0f, 0.0f,// 1
+         0.5f,  0.5f, 1.0f, 1.0f,// 2
+        -0.5f,  0.5f, 0.0f, 1.0f// 3
     };
 
     unsigned int indices[] = {
@@ -77,11 +78,15 @@ int main(void)
         2, 3, 0  // 2nd triangle indices
     };
 
+    GLCall(glEnable(GL_BLEND));
+    GLCall(glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA));
+
 
     VertexArray va;
-    VertexBuffer vb(positions, 4 * 2 * sizeof(float));
+    VertexBuffer vb(positions, 4 * 4 * sizeof(float));
 
     VertexBufferLayout layout;
+    layout.Push<float>(2);
     layout.Push<float>(2);
     va.AddBuffer(vb, layout);
 
@@ -97,6 +102,10 @@ int main(void)
     float incrementG = 0.000f;
     float incrementB = 0.007f;
     shader.SetUniform4f("u_Color", r, g, b, 1.0f);
+
+    Texture texture("res/textures/jareczek.png");
+    texture.Bind(); // ta cyferka musi sie zgadzac z ta cyferka nizej w SetUniform1i()
+    shader.SetUniform1i("u_Texture", 0);
 
     va.UnBind();
     vb.UnBind();

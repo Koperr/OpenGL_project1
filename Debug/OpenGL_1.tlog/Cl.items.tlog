@@ -4,3 +4,5 @@ C:\Users\swita\OneDrive\Pulpit\C++ nauka\OpenGL_nauka\OpenGL_1\OpenGL_1\src\Rend
 C:\Users\swita\OneDrive\Pulpit\C++ nauka\OpenGL_nauka\OpenGL_1\OpenGL_1\src\Application.cpp;C:\Users\swita\OneDrive\Pulpit\C++ nauka\OpenGL_nauka\OpenGL_1\OpenGL_1\Debug\Application.obj
 C:\Users\swita\OneDrive\Pulpit\C++ nauka\OpenGL_nauka\OpenGL_1\OpenGL_1\src\VertexBuffer.cpp;C:\Users\swita\OneDrive\Pulpit\C++ nauka\OpenGL_nauka\OpenGL_1\OpenGL_1\Debug\VertexBuffer.obj
 C:\Users\swita\OneDrive\Pulpit\C++ nauka\OpenGL_nauka\OpenGL_1\OpenGL_1\src\VertexArray.cpp;C:\Users\swita\OneDrive\Pulpit\C++ nauka\OpenGL_nauka\OpenGL_1\OpenGL_1\Debug\VertexArray.obj
+C:\Users\swita\OneDrive\Pulpit\C++ nauka\OpenGL_nauka\OpenGL_1\OpenGL_1\src\vendor\stb_image\stb_image.cpp;C:\Users\swita\OneDrive\Pulpit\C++ nauka\OpenGL_nauka\OpenGL_1\OpenGL_1\Debug\stb_image.obj
+C:\Users\swita\OneDrive\Pulpit\C++ nauka\OpenGL_nauka\OpenGL_1\OpenGL_1\src\Texture.cpp;C:\Users\swita\OneDrive\Pulpit\C++ nauka\OpenGL_nauka\OpenGL_1\OpenGL_1\Debug\Texture.obj
