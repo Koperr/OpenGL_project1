@@ -1,2 +1,1 @@
-"# nauka_OpenGL_1" 
-"# nauka_OpenGL_1" 
+### My little project for learning OpenGL
